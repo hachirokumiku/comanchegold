@@ -1,0 +1,630 @@
+>BAR0
+|0|w Game ~BAR1
+|g Control ~BAR3
+|g Options ~BAR4
+|g Detail ~BAR2
+|g Video ~BAR6
+|g Edit ~BAR5
+<
+>BAR1
+|<|0|gExit Menu~_ESC
+|d|Y.2g|Y.3dRestart Mission~RMIS
+|d|Y.2g|Y.3dMission Playback~REVP
+|d|Y.2g|Y.3d|Y:7dTakeover Playback~TAKE
+|gAbout Comanche Gold~ABOU
+|d|Y.2rEnd Mission~ABRT
+|Y:2!|Y:3!|rDisconnect~DISC
+|Y.3!|rExit Game~EXIT
+
+|g |P.3€ Allow Screen Shots ~|P.3
+<>BAR6
+ |0|g|Y.0€|w Full Screen ~|Y.0
+ |0|g|A:2d|Y.1€|w|A:2d 640x480 Menus ~|Y.1
+ |b|L!9€|L>0€|g|L>1€|y|L>2€|L>3€|L>4€|L>5€ |wGamma (+/-) ~|L+6
+|-|g
+|0|A:0! |Z=0 320x240 ~|Z=0
+|A:1! |Z=1 400x300 ~|Z=1
+|A:2! |Z=2 512x384 ~|Z=2
+|A:3! |Z=3 640x480 ~|Z=3
+|A:4! |Z=4 800x600 ~|Z=4
+|A:7! |Z=7 Stereo 320x400~|Z=7
+|AA:0! |Z=8 Stereo 320x480~|Z=8
+
+|A:5! |Z=5 1024x768 ~|Z=5
+|A:6! |Z=6 1280x1024 ~|Z=6
+|Z=9 VFX1 stereo ~|Z=9
+|Z=4 3D-Max/LCD-Bios~|Z=4
+|0|g |Z=7 320x200 VGA ~|Z=7
+<>BAR2
+|0 |b|C!9€|g|C>0€|g|C>1€ |wClouds ~|C+2
+ |b|O!9€|g|O>0€|g|O>1€|o|O>2€|o|O>3€|o|O>4€ |wObject Quality ~|O+5
+ |b|D!9€|D>0€|g|D>1€|o|D>2€|o|D>3€|o|D>4€ |wTerrain Detail ~|D+5
+ |b|E!9€|g|E>0€|g|E>1€|o|E>2€|o|E>3€|o|E>4€ |wTerrain Resolution ~|E+5
+ |0|g|Y.4€|w See Blades from Inside ~|Y.4
+|-
+ |g|G>0€|G>1€|g|G>2€|G>3€|G>4€|y|G>5€|G>6€ |wSound Volume (+/-) ~|G+7
+ |g|GA>0€|GA>1€|g|GA>2€|GA>3€|GA>4€|y|GA>5€|GA>6€ |wMenu Music (+/-) ~|GA+7
+ |g|M>0€|M>1€|g|M>2€|M>3€|M>4€|y|M>5€|M>6€ |wIn-Game Music (+/-) ~|M+7
+
+ |g|N!9€|y|N>0€ |wForeground Detail ~|N
+<>BAR3
+ |<|0|g|J=0 No JoyStick ~|J=0
+ |J=1 Windows Primary Joystick ~|J=1
+ |-
+ |T.0€ Enable Throttle (Collective)|g~|T.0
+ |T.1€ Enable Twisting Stick or Pedals (Fantail)|g~|T.1
+ |T:0d|T.2€ Reverse Throttle|g ~|T.2
+ |T:1d|T.3€ Reverse Pedals|g ~|T.3
+ |Q.0€ Fantail mixed with Cyclic ~|Q.0
+ |Q.2€ Hat Switch Controls Collective / Fantail~|Q.2
+ |Q.1€ Limit Cyclic Range (SHIFT toggles)~|Q.1
+<
+>BAR4
+|0|g|I=0 Easy Flight Model ~|I=0
+|I=1 Advanced Flight Model ~|I=1
+|-
+ |Q.6€ HMD Help Labels~|Q.6
+ |Q.7€ Full Screen Target Window~|Q.7
+|I=0< |Q.3€ Limit Collective to avoid Overtorque~|Q.3
+ |Q.4€ Hover Hold (J)~|Q.4
+ |Q.5€ Vertical Stabilizer~|Q.5
+<
+>MWIN
+|w|^=0bObjectives Complete - Press "E" to End
+<
+>MWIZ
+|w|^=0bObjectives Complete
+<
+>LOSE
+|w|^=0bMission Objectives Lost - Press "E" to End
+<
+>LOSZ
+|w|^=0bMission Objectives Lost
+<
+>MDOA
+|w|^=0bComanche Down, Mission Failed
+<
+>WFOP
+|w|^=0rWaiting for |$z
+<
+>BAR5
+|0|rLoad & Play Recording ~RECL
+|rPlay Recording ~RECP
+|rPlay Recording w/no views~REVP
+|rStart Recording ~RECI
+|rSave Recording ~RECW
+|gSave .POS File ~SMIS
+|oClear All Objects ~ECLR
+|oSet Win Flag ~SWIN
+|-
+|o |MA=1€ IP Remote Control ~|MA
+|g |P.3€ Allow Screen Shots ~|P.3
+|g |P.2€ Save 30 fps ~|P.2
+|g |P.0€ HQ 640 Screen Dump ~|P.0
+|g |P.1€ MQ 640 Screen Dump ~|P.1
+|g |S=1€ Stats ~|S
+|g |B.0€ Freeze Universe ~|B.0
+|g |B.1€ Take No Damage ~|B.1
+|-
+ |y|F=0 Helicopter FM~|F=0
+ |y|F=1 Edit n' Move FM~|F=1
+<
+>LOADv
+|.|1|lDownloading Mission Parameters...
+<
+>CAM1<
+|1|.|oSilver Operations
+|<|-
+  |gGallant Venture  ~MIS2
+  |gFrozen Friendship  ~MIS3
+  |gFirm Resolve  ~MIS4
+  |gDesert Endeavor  ~MIS5
+<
+>CAM2<
+|1|.|yGold Operations
+|<|-
+  |gSwift Justice  ~MIS6
+  |gProvidence  ~MIS7
+  |gFar Reach  ~MIS8
+  |gKingpin  ~MIS9
+  |gSouthern Star  ~MIS0
+<
+>MAIN<
+|.|1|oDuty Roster for "|$@"
+|l|-|<
+|B.7!|B:6!|r|.Multi Player Only without CD
+|B.7!|B.6!|r|.Melee Only without CD
+|B.7!|-|<
+|B:7!  |gTraining Flights  ~MIS1
+|B:7!  |gSilver Operations  ~CAM1
+|B:7!  |gGold Operations  ~CAM2
+|B:7!  |gSpecial Operations  ~MISA
+|B:7!  |gLoad User Mission  ~USER
+  |gMulti-Player War Games  ~MULT
+|B:7!  |oComanche Overview  ~OVER
+  |oService Record  ~SERV
+  |oCredits  ~CRED
+  |oRe-Enlist  ~NAME
+  |rRequest Leave  ~EXIT
+<
+>NAME<v
+|1|.|w   Pilot Roster   |b
+|-
+xxxxxxxxxxxx~PL00
+xxxxxxxxxxxx~PL01
+xxxxxxxxxxxx~PL02
+xxxxxxxxxxxx~PL03
+xxxxxxxxxxxx~PL04
+xxxxxxxxxxxx~PL05
+xxxxxxxxxxxx~PL06
+xxxxxxxxxxxx~PL07
+xxxxxxxxxxxx~PL08
+xxxxxxxxxxxx~PL09
+|-
+|.|0|w'DEL' enters name
+<
+>SERV<
+|.|1|o "|$@" |w
+|-
+|U!0!
+|W!0!Warrant Officer
+|W!1!Chief Warrant Officer-2
+|W!2!Chief Warrant Officer-3
+|W!3!Chief Warrant Officer-4
+|W!4!Master Warrant Officer-5
+
+|U=0!
+|U!1!Army Aviator
+|U!2!Senior Aviator
+|U!3!Master Aviator
+|-|b
+Flight Time: |##
+Successful Training Missions: |#a0
+Successful Combat Missions: |#b0
+Confirmed Targets: |#t0
+Total Score: |#s0
+<
+>ABOU
+|.|0|yNovaLogic Presents
+|1|oComanche Gold
+|0|yBy
+|yKyle Freeman|g
+
+CG - ####### - US
+©1998 NovaLogic, Inc.
+Comanche is a Registered
+Trademark of NovaLogic, Inc.
+|-|g
+Memory Used = |#a0K
+DirectSound = |$a
+<
+>JOIN
+|.|1|bConnecting to Host
+<
+>MULT<
+|.|1|oMulti-Player War Games
+|<|-
+  |gNovaWorld  ~NOV0
+  |gIPX Network  ~IPX1
+  |gModem  ~MOD3
+  |gSerial  ~SER4
+|-
+  |rDefine Chat Macros  ~CMAC
+<
+>MNOV<
+|.|1|oNovaWorld
+|-|o|<
+  |BA=0 Browser   ~|BA=0
+  |BA=1 NovaWorld Client   ~|BA=1
+|-|.
+  |gConnect  ~NEJ4
+<
+
+>MIPX<
+|.|1|oIPX Network
+|<|-
+  |gJoin an IPX Game  ~NEJ1
+  |gHost an IPX Game  ~NEH1
+<
+>MSER<
+|.|1|oSerial
+|-|o
+  |AA=0 COM1   ~|AA=0
+  |AA=1 COM2   ~|AA=1
+  |AA=2 COM3   ~|AA=2
+  |AA=3 COM4   ~|AA=3
+|-
+  |gJoin a Serial Game  ~NEJ4
+  |gHost a Serial Game  ~NEH4
+<
+>PHON<
+|1|.|o            Modem            |g
+|-
+xxxxxxxxxxxxxxxxxxxx~PL00
+xxxxxxxxxxxxxxxxxxxx~PL01
+xxxxxxxxxxxxxxxxxxxx~PL02
+xxxxxxxxxxxxxxxxxxxx~PL03
+xxxxxxxxxxxxxxxxxxxx~PL04
+|-
+|gWait for Call~ANSW
+|-
+|.|0|rSelect a number, or press
+'DEL' to enter a new number
+<
+>CMAC<
+|1|.|o  User Definable Text Chat Macros  |b
+|-|<
+|wF1|b xxxxxxxxxxxxxxxxxxxxxxxxxxxx ~PL00
+|wF2|b xxxxxxxxxxxxxxxxxxxxxxxxxxxx ~PL01
+|wF3|b xxxxxxxxxxxxxxxxxxxxxxxxxxxx ~PL02
+|wF4|b xxxxxxxxxxxxxxxxxxxxxxxxxxxx ~PL03
+|wF5|b xxxxxxxxxxxxxxxxxxxxxxxxxxxx ~PL04
+|wF6|b xxxxxxxxxxxxxxxxxxxxxxxxxxxx ~PL05
+|wF7|b xxxxxxxxxxxxxxxxxxxxxxxxxxxx ~PL06
+|wF8|b xxxxxxxxxxxxxxxxxxxxxxxxxxxx ~PL07
+|wF9|b xxxxxxxxxxxxxxxxxxxxxxxxxxxx ~PL08
+|-
+|1|.|bPress 'DEL' to edit
+<
+>WAIT
+|.|1|bWaiting for Incoming Call
+<
+>DIAL
+|.|1|bDialing Number
+<
+>DISC
+|.|1|bBreaking Connection...
+<
+>ERRC
+|.|1|wDevice Not Configured|b
+<
+>ERRB
+|.|1|b Unable to Connect |w
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+<
+>ERRN
+|.|1|wNetwork Not Responding|b
+<
+>ERR1
+|.|1|wDevice Not Responding|b
+<
+>ERR2
+|.|1|wCommunication Failure|b
+Unable to continue communication
+<
+>ERR3
+|.|1|wGame Version Failure|b
+This version older than other players
+<
+>ERR4
+|.|1|wConfusing Packet|b
+Other games on same socket
+<
+>ERR5
+|.|1|wMulti-Play Failure|b
+Unable to continue
+<
+>ERRS
+|.|1|wMulti-Play Failure|b
+Unable to Re-Send
+<
+>ERRP
+|.|1|wMulti-Play Failure|b
+Player Behind
+<
+>NETX<
+|1|.|o SAC Mil-Net Active Battlefields |b
+|<|-
+   |bHead-2-Head: Comanche Melee  ~MP01
+|B:5!|-
+|B:5!  |bCo-op: Gallant Venture  ~MIS2
+|B:5!  |bCo-op: Frozen Friendship  ~MIS3
+|B:5!  |bCo-op: Firm Resolve  ~MIS4
+|B:5!  |bCo-op: Desert Endeavor  ~MIS5
+|B:5!  |bCo-op: Swift Justice  ~MIS6
+|B:5!  |bCo-op: Providence  ~MIS7
+|B:5!  |bCo-op: Far Reach  ~MIS8
+|B:5!  |bCo-op: Kingpin  ~MIS9
+|B:5!  |bCo-op: Southern Star  ~MIS0
+|-
+   |wBreak Connection~DISC
+<
+>MP01<
+|1|.|oHead-2-Head: Comanche Melee
+|<|-|g
+  Red Rock Mesa  ~MP01
+  Cool Desert Night  ~MP02
+  Snow Island  ~MP03
+  Meadow Land  ~MP04
+  Wild Wetlands  ~MP09
+  Storm Troopers ~MP06
+  River Runner  ~MP07
+  Frozen Free-For-All  ~MP08
+<
+>LOOK<
+|1|.|o Looking for Pilots |b
+|.|-
+xxxxxxxxxxxx
+xxxxxxxxxxxx
+xxxxxxxxxxxx
+xxxxxxxxxxxx
+xxxxxxxxxxxx
+xxxxxxxxxxxx
+xxxxxxxxxxxx
+xxxxxxxxxxxx
+xxxxxxxxxxxx
+xxxxxxxxxxxx
+|NA!1!|.|0|bWait for all Pilots to Join,
+|NA!1!then press a key to continue
+|NA!0!|.|0|bWaiting for Host to Begin Game
+<
+>MIS1<
+|1|.|oTraining Missions
+|<|-
+|c11  Fort Rucker  ~c1m1
+|c12  Ground Attack  ~c1m2
+|c13  Air Combat  ~c1m3
+|c14  Artillery Spotting  ~c1m4
+|c15  Graduation Day  ~c1m5
+|c16  Free Flight  ~c1m6
+<
+>MIS2<
+|1|.|oGallant Venture
+|<|-
+|c21  Haystack  ~c2m1
+|c22  Triple Play  ~c2m2
+|c23  Hamel Lane  ~c2m3
+|c24  Showdown  ~c2m4
+|c25  Saving Grace  ~c2m5
+|c26  Nightwing  ~c2m6
+|c27  Onslaught  ~c2m7
+|c28  Checkmate  ~c2m8
+<
+>MIS3<
+|1|.|oFrozen Friendship
+|<|-
+|c31  Ambush Alley  ~c3m1
+|c32  Stormfront  ~c3m2
+|c33  Ice Box  ~c3m3
+|c34  Ghost Train  ~c3m4
+|c35  Scalpel  ~c3m5
+|c36  Spetsnaz  ~c3m6
+|c37  Cold Warriors  ~c3m7
+|c38  Tunnel Vision  ~c3m8
+<
+>MIS4<
+|1|.|oFirm Resolve
+|<|-
+|c41  Bastion  ~c4m1
+|c42  Tsunami  ~c4m2
+|c43  Vanguard  ~c4m3
+|c44  Easy Money  ~c4m4
+|c45  Making the Grade  ~c4m5
+|c46  Sucker Punch  ~c4m6
+|c47  Boy's Night Out  ~c4m7
+|c48  Red Tide  ~c4m8
+<
+>MIS5<
+|1|.|oDesert Endeavor
+|<|-
+|c51  Guidelines  ~c5m1
+|c52  Blackout  ~c5m2
+|c53  Icarus  ~c5m3
+|c54  Interstate  ~c5m4
+|c55  Bloodhound  ~c5m5
+|c56  NBC Express  ~c5m6
+|c57  Big Al's Place  ~c5m7
+|c58  Hail Mary  ~c5m8
+<
+>MIS6<
+|1|.|oSwift Justice
+|<|-
+|c61  Delta Patrol  ~c6m1
+|c62  Recon  ~c6m2
+|c63  Convoy  ~c6m3
+|c64  Embargo  ~c6m4
+|c65  Pathfinder  ~c6m5
+|c66  Eagle Eye  ~c6m6
+|c67  Security  ~c6m7
+|c68  Wrecking Crew  ~c6m8
+<
+>MIS7<
+|1|.|oProvidence
+|<|-
+|c71  Bird's Nest  ~c7m1
+|c72  Goldmine  ~c7m2
+|c73  Sneak Peek  ~c7m3
+|c74  Drawbridge  ~c7m4
+|c75  Stockpile  ~c7m5
+|c76  Roadkill  ~c7m6
+|c77  Sledge Hammer  ~c7m7
+|c78  Loose Ends  ~c7m8
+<
+>MIS8<
+|1|.|oFar Reach
+|<|-
+|c81  Home Free  ~c8m1
+|c82  Roadblock  ~c8m2
+|c83  Checkpoint  ~c8m3
+|c84  Campfire  ~c8m4
+|c85  Blinding Light  ~c8m5
+|c86  Border Guard  ~c8m6
+|c87  Matchbox  ~c8m7
+|c88  House Call  ~c8m8
+<
+>MIS9<
+|1|.|oKingpin
+|<|-
+|c91  Lifeguard  ~c9m1
+|c92  Intruder  ~c9m2
+|c93  Sentry  ~c9m3
+|c94  Time Out  ~c9m4
+|c95  Crackdown  ~c9m5
+|c96  Hurricane  ~c9m6
+|c97  Clean Up  ~c9m7
+|c98  Flashpoint  ~c9m8
+<
+>MIS0<
+|1|.|oSouthern Star
+|<|-
+|c01  Gator Bait  ~c0m1
+|c02  Brick Wall  ~c0m2
+|c03  Liberation  ~c0m3
+|c04  Shell Game  ~c0m4
+|c05  King Of The Road  ~c0m5
+|c06  Shore Patrol  ~c0m6
+|c07  Leviathan  ~c0m7
+|c08  Main Event  ~c0m8
+<
+>MISA<
+|1|.|oSpecial Operations
+|-
+|yOperation Elva|0
+|yby Major Allen Sakcriska
+|<|-
+|1|c10  Destroy Air Defense  ~c1m0
+|c20  Close Air Support  ~c2m0
+|c30  Zone Recon  ~c3m0
+|c40  Attack Airfield  ~c4m0
+|c50  Logistics Strike  ~c5m0
+|c60  Search and Rescue  ~c6m0
+<
+>MATE
+|w|0|.Team Mate Orders
+|KA!0!|b(Team Mate Unavailable)|w
+|KA!1!|r(Team Mate Down)|w
+|KA!2!|K!1!Follow and Engage
+|KA!2!|K!2!Engage Air
+|KA!2!|K!3!Engage Ground
+|KA!2!|K!4!Follow and Evade
+|KA!2!|K!5!Scout Ahead
+|KA!2!|K!6!Cover Me
+|KA!2!|K!7!Stay Here
+|KA!2!|K!8!Patrol Base
+|-
+|KA!2dAssign New Orders
+|<|K=1g|KA!2d1 - Follow and Engage|w
+|K=2g|KA!2d2 - Engage Air|w
+|K=3g|KA!2d3 - Engage Ground|w
+|K=4g|KA!2d4 - Follow and Evade|w
+|K=5g|KA!2d5 - Scout Ahead|w
+|K=6g|KA!2d6 - Cover Me|w
+|K=7g|KA!2d7 - Stay Here|w
+|K=8g|KA!2d8 - Patrol Base
+<
+>STAT
+|.DeBriefing for |$@
+|<
+|,Mission Targets: |#g0 of |#t0|&Flight Time: |##
+|,Other Units Destroyed: |#a0|&Other Targets Destroyed: |#b0
+|,Fratricide: |#d0|&Mission Score: |#s0
+
+|.Press 1 to Restart, 2 to Exit Mission, 3 to Playback
+<
+>MPS1
+|.Melee Ranking - Press 2 to Exit Mission
+|<
+<
+>MPS2
+|,|$a|;8Kills |#a0|;cDeaths |#b0
+<
+>COP1
+|.Comanche Team DeBriefing - Press 2 to Exit Mission
+|<
+<
+>COP2
+|,|$a|;7Targets |#a0|;aOther |#b0|;dDeaths |#c0
+<
+>IGST
+|.|gComanche Key Reference
+|-|<
+  |w`1234567890|g|;4Set Collective 0 to 100%
+  |w- +|g|;4Momentary Min/Max Collective
+  |w*|g|;4Nominal (Mid) Collective Setting
+  |wIns Del|g|;4Fantail|&|wA S|g|;bFantail
+|-
+  |wEnter|g|;3Cycle Target|&|wBckspc|g|;bBreak Target
+  |wZXCVBN|g|;3Weapon Select|&|w[ ]|g|;bCycle Weapons
+  |wQ|g|;3Target Mode|&|wTab|g|;bHold Mode
+|-
+  |wF|g|;3Bay Doors|&|wG|g|;bLanding Gear
+  |wJ|g|;3H.Hold|&|wK|g|;bSet Lock Alt.
+  |wL|g|;3A.Lock|&|wR|g|;bSend Message
+  |wW|g|;3Waypoints|&|wAlt-E|g|;bEngine
+  |wD|g|;3HMD Display|&|wH|g|;bHMD Colors
+  |w, .|g|;3Zoom Map|&|wI|g|;bMap Mode
+<
+>_HMD
+CANNON
+<
+ROCKETS
+<
+STINGERS
+<
+HELLFIRES
+<
+ARTILLERY
+<
+TEAM HANDOFF
+<
+LINK READY
+<
+NOT RESPONDING
+<
+LINK ACTIVE
+<
+GPS HELLFIRES
+<
+MALFUNCTION
+<
+TARGETS |#a0
+<
+KILLS |#a0
+<
+DEATHS |#a0
+<
+BAY
+<
+GEAR
+<
+TRGT PRIORITY
+<
+TRGT CYCLE
+<
+|^=0rTRGT HOLD |#a0
+<
+TEAM MATE VIEW
+<
+|^=0rGEAR UP
+<
+|^=0rMISSION PLAYBACK
+<
+|wMISSION PAUSED
+<
+|$a takes out |$b!
+<
+|$a eliminates |$b!
+<
+|$b is toasted by |$a!
+<
+|$a ruins |$b's day
+<
+|$a crashes!
+<
+TORQUE
+<
+SPEED
+<
+ALT
+<
+LOCK ALT (FT) - ###
+<
+V-STAB
+<
+>BRIEFING
+BACK
+NEXT
+1X
+2X
+<
+>FINI
